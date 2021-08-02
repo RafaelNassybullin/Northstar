@@ -174,4 +174,30 @@ a {
   z-index: -1;
 }
 
+.supports {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.3rem 0;
+}
+.supports h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #5C9992;
+  margin-bottom: 3.7rem;
+}
+.supports .supports-logo {
+  max-width: 71.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5.3rem;
+}
+.supports .supports-logo img {
+  max-height: 4rem;
+  margin: 0 2vw;
+}
+
 /*# sourceMappingURL=main.css.map */
