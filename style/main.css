@@ -7,6 +7,21 @@
 html {
   font-size: 10px;
 }
+@media (max-width: 1112px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 1115px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 850px) {
+  html {
+    font-size: 7px;
+  }
+}
 
 body {
   font-family: Roboto, sans-serif;
@@ -198,6 +213,104 @@ a {
 .supports .supports-logo img {
   max-height: 4rem;
   margin: 0 2vw;
+}
+
+.offers {
+  background: white;
+  color: #004A43;
+  padding: 7rem 0;
+}
+.offers h1 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+.offers-card-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.offers-card-wrap .offers-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.offers-card-wrap .offers-card .circle {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 0.3rem solid black;
+  font-size: 2.3rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  margin: 4.1rem 0 2rem 0;
+}
+.offers-card-wrap .offers-card .offers-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.offers-card-wrap .offers-card .offers-description {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem 0 1.2rem 0;
+  max-width: 36.6rem;
+  line-height: 2.2rem;
+}
+.offers-card-wrap .offers-card .offers-link {
+  font-size: 1.6rem;
+  color: #7D77FC;
+  font-weight: 700;
+}
+.offers-card-wrap .offers-card .mod-1 {
+  color: #019380;
+  border: 0.3rem solid #019380;
+}
+.offers-card-wrap .offers-card .mod-2 {
+  color: #EEA239;
+  border: 0.3rem solid #EEA239;
+}
+.offers-card-wrap .offers-card .mod-3 {
+  color: #FA70B6;
+  border: 0.3rem solid #FA70B6;
+}
+
+.personal-finances__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 0 3rem 0;
+}
+.personal-finances__wrap .personal-finances__image {
+  max-width: 50rem;
+  max-height: 36rem;
+}
+.personal-finances__wrap .personal-finances__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.personal-finances__wrap .personal-finances__text {
+  max-width: 58.2rem;
+  gap: 3rem;
+}
+.personal-finances__wrap .personal-finances__text .title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: unset;
+  margin-bottom: 6rem;
+}
+.personal-finances__wrap .personal-finances__text .description {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.hr .hr-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
