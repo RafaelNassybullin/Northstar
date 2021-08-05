@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.3s;
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background: #58D1BD;
 }
 
 html {
@@ -98,6 +104,7 @@ a {
   height: 3rem;
   background: #004A43;
   border-radius: 50%;
+  cursor: pointer;
 }
 @media (max-width: 968px) {
   .burger {
@@ -231,6 +238,11 @@ a {
   justify-content: space-between;
   gap: 3rem;
 }
+@media (max-width: 688px) {
+  .offers-card-wrap {
+    flex-direction: column;
+  }
+}
 .offers-card-wrap .offers-card {
   display: flex;
   align-items: center;
@@ -307,10 +319,155 @@ a {
   line-height: 2.2rem;
 }
 
+.hr {
+  color: #004A43;
+  padding: 7.5rem 0;
+}
 .hr .hr-title {
   font-size: 3.2rem;
   font-weight: 700;
   text-align: center;
+}
+.hr .sources {
+  color: #5C9992;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.hr-card__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 6rem 0 2rem 0;
+  align-items: center;
+}
+.hr-card__wrap .hr-card {
+  width: 40rem;
+  height: 23rem;
+  background: white;
+  border-radius: 2.5rem;
+  padding: 0 3rem;
+  display: flex;
+  margin: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.hr-card__wrap .hr-card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.hr-card__wrap .hr-card .diagram-wrap {
+  display: flex;
+  margin: 2.4rem 0;
+}
+.hr-card__wrap .hr-card h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-right: 2.3rem;
+}
+.hr-card__wrap .hr-card .diagram {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: radial-gradient(circle closest-side, transparent 100%, #fff 0), conic-gradient(from 189deg, #58D1BD 0, #58D1BD 55%, #004A43 0, #004A43 45%);
+}
+.hr-card__wrap .hr-card p {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  width: 21.1rem;
+}
+
+.onTOP {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: radial-gradient(circle closest-side, transparent 100%, #fff 0), conic-gradient(from 180deg, #ee5253 0, #ee5253 35%, #019380 0, #019380 65%);
+}
+
+.partners {
+  background: white;
+  color: #004A43;
+  padding: 6.4rem 0;
+}
+.partners h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.partners-card-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+.partners-card-wrap .partners-card {
+  width: 30.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.partners-card-wrap .partners-card .icon {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.partners-card-wrap .partners-card .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.partners-card-wrap .partners-card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1.6rem 0 2rem 0;
+}
+.partners-card-wrap .partners-card p {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.4rem;
+}
+
+.zoom {
+  padding: 6rem 0;
+  color: #004A43;
+}
+.zoom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zoom-quote-wrap {
+  max-width: 95.8rem;
+}
+.zoom-quote-wrap .zoom-description {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+.zoom-quote-wrap .author {
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
+}
+.zoom-quote-wrap .author .avatar {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: #004A43;
+}
+.zoom-quote-wrap .author .name {
+  font-size: 1.7rem;
+  margin: 0 3.6rem 0 1.7rem;
+}
+.zoom-quote-wrap .author .company {
+  height: 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */
