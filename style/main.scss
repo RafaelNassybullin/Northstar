@@ -117,6 +117,9 @@ a {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  @media(max-width: 772px) {
+    flex-direction: column;
+  }
 }
 
 .main-title {
@@ -133,6 +136,9 @@ a {
   .text {
     font-size: 2.4rem;
     width: 53.6rem;
+    @media(max-width: 430px) {
+      width: unset;
+    }
     margin: 3.2rem 2rem 3.2rem 0;
   }
 
@@ -320,10 +326,14 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 6rem 0 3rem 0;
+  @media(max-width: 834px) {
+    flex-direction: column;
+  }
 
   .personal-finances__image {
     max-width: 50rem;
     max-height: 36rem;
+    margin: 3rem;
 
     img {
       width: 100%;
@@ -335,6 +345,7 @@ a {
   .personal-finances__text {
     max-width: 58.2rem;
     gap: 3rem;
+    margin: 3rem;
 
     .title {
       font-size: 3.2rem;
@@ -405,8 +416,28 @@ a {
       width: 3rem;
       height: 3rem;
       border-radius: 50%;
+
+
+    }
+
+    .one {
       background: radial-gradient(circle closest-side, transparent 100%, #fff 0),
       conic-gradient(from 189deg, #58D1BD 0, #58D1BD 55%, #004A43 0, #004A43 45%);
+    }
+
+    .two {
+      background: radial-gradient(circle closest-side, transparent 100%, #fff 0),
+      conic-gradient(from 111deg, #3DA6C3 0, #3DA6C3 68%, #004A43 0, #004A43 32%);
+    }
+
+    .three {
+      background: radial-gradient(circle closest-side, transparent 100%, #fff 0),
+      conic-gradient(from 187deg, #004A43 0, #004A43 51%, #FA70B6 0, #FA70B6 49%);
+    }
+
+    .four {
+      background: radial-gradient(circle closest-side, transparent 100%, #fff 0),
+      conic-gradient(from 111deg, #FFAD3D 0, #FFAD3D 70%, #004A43 0, #004A43 30%);
     }
 
     p {
@@ -425,6 +456,20 @@ a {
   height: 5rem;
   border-radius: 50%;
   background: #7D77FC;
+  transform: rotate(270deg);
+  display: grid;
+
+  &:hover {
+    background: #EEA239;
+  }
+
+  place-items: center;
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+    fill: white;
+  }
 }
 
 
@@ -541,6 +586,9 @@ a {
 .live-stages-content {
   display: flex;
   align-items: center;
+  @media(max-width: 619px) {
+    flex-direction: column;
+  }
 
   .live-stages-image {
     width: 38.6rem;
@@ -549,6 +597,9 @@ a {
     margin: 3rem;
     border-radius: 2rem;
     overflow: hidden;
+    @media(max-width: 340px) {
+      margin: 3rem 0 0 0;
+    }
 
     img {
       width: 100%;
