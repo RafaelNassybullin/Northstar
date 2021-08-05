@@ -150,6 +150,10 @@ a {
   margin-bottom: 3.2rem;
   cursor: pointer;
 }
+.main-title button:hover {
+  background: #7D77FC;
+  color: white;
+}
 .main-title .main-link {
   font-size: 1.6rem;
 }
@@ -385,7 +389,7 @@ a {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background: radial-gradient(circle closest-side, transparent 100%, #fff 0), conic-gradient(from 180deg, #ee5253 0, #ee5253 35%, #019380 0, #019380 65%);
+  background: #7D77FC;
 }
 
 .partners {
@@ -521,6 +525,99 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.employers {
+  padding: 7rem 0;
+}
+.employers h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.employers-card-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
+@media (max-width: 786px) {
+  .employers-card-wrap {
+    flex-direction: column;
+  }
+}
+.employers-card-wrap .employers-card {
+  margin: 1.5rem;
+  width: 49.2rem;
+  height: 47rem;
+  background: white;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  padding: 3.5rem 3.2rem;
+  overflow: hidden;
+}
+.employers-card-wrap .employers-card .employers-card-image {
+  position: absolute;
+  width: 100%;
+  height: 28.5rem;
+  top: 0;
+  left: 0;
+}
+.employers-card-wrap .employers-card .employers-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.employers-card-wrap .employers-card .employers-card-text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.employers-card-wrap .employers-card .employers-card-text p {
+  font-size: 1.5rem;
+  margin: 1.3rem 0 0.8rem 0;
+  line-height: 2.2rem;
+}
+.employers-card-wrap .employers-card .employers-card-text a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #7D77FC;
+}
+
+.schedule {
+  padding: 12.8rem 0;
+  background: #004A43;
+}
+
+.schedule-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.schedule-wrap h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: white;
+}
+.schedule-wrap button {
+  margin-top: 3.2rem;
+  background: #EEA239;
+  outline: none;
+  border: none;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #004A43;
+  padding: 2.1rem 5.8rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.schedule-wrap button:hover {
+  background: #7D77FC;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
