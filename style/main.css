@@ -33,6 +33,7 @@ body {
   font-family: Roboto, sans-serif;
   background: #F1F6F6;
   overflow-x: hidden;
+  color: #004A43;
 }
 
 ul {
@@ -468,6 +469,58 @@ a {
 }
 .zoom-quote-wrap .author .company {
   height: 4rem;
+}
+
+.live-stages {
+  background: white;
+  padding: 7rem 0;
+}
+.live-stages .live-stages-title {
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+.live-stages-wrap {
+  display: grid;
+  place-items: center;
+}
+
+.live-stages-content {
+  display: flex;
+  align-items: center;
+}
+.live-stages-content .live-stages-image {
+  width: 38.6rem;
+  height: 38.6rem;
+  background: #ee5253;
+  margin: 3rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.live-stages-content .live-stages-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.live-stages-list {
+  margin: 3rem;
+}
+.live-stages-list li {
+  display: flex;
+  align-items: center;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+.live-stages-list li .list-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 1.6rem;
+}
+.live-stages-list li .list-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
