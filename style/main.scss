@@ -796,10 +796,12 @@ a {
   background: #004A43;
   color: white;
   font-size: 1.5rem;
+  position: relative;
   @media(max-width: 590px){
 font-size: 2.3rem;
+
   }
-  padding: 5.5rem 0;
+  padding: 7rem 0;
   h2{
     margin-top: 5rem;
   }
@@ -824,13 +826,23 @@ flex-direction: column;
   display: flex;
 
   .icons{
-margin-right: 1.6rem;
-    width: 2.4rem;
-    height: 2.4rem;
+    margin-right: 1.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     background: white;
     display: grid;
     place-items: center;
+    a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      svg{
+        height: 1.3rem;
+        margin: 0;
+        fill: #004A43;
+      }
+    }
   }
 }
 .footer-logo{
@@ -855,4 +867,21 @@ margin-top: 5rem;
 }
 .support{
   flex: 14.8rem;
+}
+
+.cat-in-footer{
+  width: 8.6rem;
+  height: 10.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 4.5rem;
+  @media(max-width: 980px){
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
