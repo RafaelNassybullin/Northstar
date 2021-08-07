@@ -68,6 +68,12 @@ a {
   }
 }
 
+@media (max-width: 320px) {
+  .logo a img {
+    height: 2rem;
+  }
+}
+
 .nav-list {
   display: flex;
 }
@@ -93,9 +99,33 @@ a {
 .authorisation a:first-child {
   margin-right: 1.8vw;
 }
+@media (max-width: 414px) {
+  .authorisation a:first-child {
+    margin-right: 4.8vw;
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .authorisation a:first-child {
+    margin-right: 3vw;
+    font-size: 2rem;
+  }
+}
 @media (max-width: 968px) {
   .authorisation a:nth-child(2) {
     margin-right: 1.8vw;
+  }
+}
+@media (max-width: 968px) and (max-width: 414px) {
+  .authorisation a:nth-child(2) {
+    margin-right: 4.8vw;
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 968px) and (max-width: 375px) {
+  .authorisation a:nth-child(2) {
+    margin-right: 3vw;
+    font-size: 2rem;
   }
 }
 
@@ -235,6 +265,11 @@ a {
 .supports .supports-logo img {
   max-height: 4rem;
   margin: 0 2vw;
+}
+@media (max-width: 320px) {
+  .supports .supports-logo img {
+    max-height: 3.6rem;
+  }
 }
 
 .offers {
@@ -500,6 +535,11 @@ a {
   align-items: center;
   margin-top: 6rem;
 }
+@media (max-width: 414px) {
+  .zoom-quote-wrap .author {
+    display: block;
+  }
+}
 .zoom-quote-wrap .author .avatar {
   width: 2.4rem;
   height: 2.4rem;
@@ -510,8 +550,18 @@ a {
   font-size: 1.7rem;
   margin: 0 3.6rem 0 1.7rem;
 }
+@media (max-width: 414px) {
+  .zoom-quote-wrap .author .name {
+    margin: 3.6rem 0 1.7rem;
+  }
+}
 .zoom-quote-wrap .author .company {
   height: 4rem;
+}
+@media (max-width: 414px) {
+  .zoom-quote-wrap .author .company {
+    width: 8rem;
+  }
 }
 
 .live-stages {
@@ -545,6 +595,15 @@ a {
   border-radius: 2rem;
   overflow: hidden;
 }
+@media (max-width: 320px) {
+  .live-stages-content .live-stages-image {
+    width: 35.6rem;
+    height: 35.6rem;
+  }
+}
+.live-stages-content .live-stages-image:hover {
+  transform: scale(1.1);
+}
 @media (max-width: 340px) {
   .live-stages-content .live-stages-image {
     margin: 3rem 0 0 0;
@@ -559,11 +618,20 @@ a {
 .live-stages-list {
   margin: 3rem;
 }
+@media (max-width: 320px) {
+  .live-stages-list {
+    margin: 3rem 0 0 0;
+  }
+}
 .live-stages-list li {
   display: flex;
   align-items: center;
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.live-stages-list li:hover {
+  transform: scale(0.9);
 }
 .live-stages-list li .list-icon {
   width: 3.2rem;
@@ -608,6 +676,14 @@ a {
   position: relative;
   padding: 3.5rem 3.2rem;
   overflow: hidden;
+}
+@media (max-width: 320px) {
+  .employers-card-wrap .employers-card {
+    width: 43.2rem;
+  }
+}
+.employers-card-wrap .employers-card:hover {
+  transform: scale(0.9);
 }
 .employers-card-wrap .employers-card .employers-card-image {
   position: absolute;
@@ -667,6 +743,73 @@ a {
 .schedule-wrap button:hover {
   background: #7D77FC;
   color: white;
+}
+
+.footer {
+  background: #004A43;
+  color: white;
+  font-size: 1.5rem;
+  padding: 5.5rem 0;
+}
+@media (max-width: 590px) {
+  .footer {
+    font-size: 2.3rem;
+  }
+}
+.footer h2 {
+  margin-top: 5rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 590px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+}
+.footer-wrapper li {
+  margin-top: 2rem;
+}
+
+.social {
+  display: flex;
+}
+.social .icons {
+  margin-right: 1.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: white;
+  display: grid;
+  place-items: center;
+}
+
+.footer-logo {
+  flex: 30rem;
+}
+.footer-logo svg {
+  margin-top: 5rem;
+}
+.footer-logo p {
+  margin: 2rem 0;
+}
+
+.company2 {
+  flex: 16.6rem;
+}
+
+.product {
+  flex: 25.1rem;
+}
+
+.use-cases {
+  flex: 24.7rem;
+}
+
+.support {
+  flex: 14.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */

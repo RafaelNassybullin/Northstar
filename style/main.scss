@@ -60,7 +60,15 @@ a {
   align-items: center;
   height: 11.2rem;
 }
-
+.logo{
+  a{
+    img{
+      @media(max-width: 320px){
+        height: 2rem;
+      }
+    }
+  }
+}
 .nav-list {
   display: flex;
 
@@ -89,12 +97,27 @@ a {
 
     &:first-child {
       margin-right: 1.8vw;
-
+      @media(max-width: 414px){
+        margin-right: 4.8vw;
+        font-size: 2.5rem;
+      }
+      @media(max-width: 375px){
+        margin-right: 3vw;
+        font-size: 2rem;
+      }
     }
 
     @media(max-width: 968px) {
       &:nth-child(2) {
         margin-right: 1.8vw;
+        @media(max-width: 414px){
+        margin-right: 4.8vw;
+        font-size: 2.5rem;
+      }
+        @media(max-width: 375px){
+        margin-right: 3vw;
+        font-size: 2rem;
+      }
       }
     }
   }
@@ -242,6 +265,9 @@ a {
     img {
       max-height: 4rem;
       margin: 0 2vw;
+      @media(max-width: 320px){
+        max-height: 3.6rem;
+      }
     }
   }
 }
@@ -549,6 +575,9 @@ a {
     display: flex;
     align-items: center;
     margin-top: 6rem;
+    @media(max-width: 414px){
+      display: block;
+    }
 
     .avatar {
       width: 2.4rem;
@@ -560,10 +589,16 @@ a {
     .name {
       font-size: 1.7rem;
       margin: 0 3.6rem 0 1.7rem;
+      @media(max-width: 414px){
+        margin: 3.6rem 0 1.7rem;
+      }
     }
 
     .company {
       height: 4rem;
+      @media(max-width: 414px){
+        width: 8rem;
+      }
     }
   }
 }
@@ -593,10 +628,17 @@ a {
   .live-stages-image {
     width: 38.6rem;
     height: 38.6rem;
+    @media(max-width: 320px){
+          width: 35.6rem;
+    height: 35.6rem;
+    }
     background: #ee5253;
     margin: 3rem;
     border-radius: 2rem;
     overflow: hidden;
+    &:hover{
+      transform: scale(1.1);
+    }
     @media(max-width: 340px) {
       margin: 3rem 0 0 0;
     }
@@ -611,13 +653,18 @@ a {
 
 .live-stages-list {
   margin: 3rem;
-
+  @media(max-width: 320px){
+    margin: 3rem 0 0 0;
+  }
   li {
     display: flex;
     align-items: center;
     font-size: 2.1rem;
     margin-bottom: 1.5rem;
-
+    cursor: pointer;
+    &:hover{
+      transform: scale(0.9);
+    }
     .list-icon {
       width: 3.2rem;
       height: 3.2rem;
@@ -641,12 +688,12 @@ a {
     text-align: center;
   }
 }
-
 .employers-card-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 7rem;
+
   @media(max-width: 786px) {
     flex-direction: column;
   }
@@ -654,6 +701,9 @@ a {
   .employers-card {
     margin: 1.5rem;
     width: 49.2rem;
+    @media(max-width: 320px){
+      width: 43.2rem;
+    }
     height: 47rem;
     background: white;
     border-radius: 3rem;
@@ -663,6 +713,9 @@ a {
     position: relative;
     padding: 3.5rem 3.2rem;
     overflow: hidden;
+    &:hover{
+    transform: scale(0.9);
+  }
 
     .employers-card-image {
       position: absolute;
@@ -736,4 +789,70 @@ a {
       color: white;
     }
   }
+}
+
+
+.footer{
+  background: #004A43;
+  color: white;
+  font-size: 1.5rem;
+  @media(max-width: 590px){
+font-size: 2.3rem;
+  }
+  padding: 5.5rem 0;
+  h2{
+    margin-top: 5rem;
+  }
+}
+
+.footer-wrapper{
+  display: flex;
+  //justify-content: center;
+  flex-wrap: wrap;
+  @media(max-width: 590px){
+flex-direction: column;
+  }
+  li{
+    margin-top: 2rem;
+  }
+}
+
+.footer-wrapper>div{
+  //margin: 0 auto;
+}
+.social{
+  display: flex;
+
+  .icons{
+margin-right: 1.6rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: white;
+    display: grid;
+    place-items: center;
+  }
+}
+.footer-logo{
+  flex: 30rem;
+  svg{
+margin-top: 5rem;
+  }
+
+  p{
+    margin: 2rem 0;
+  }
+
+}
+.company2{
+  flex: 16.6rem;
+}
+.product{
+  flex: 25.1rem;
+}
+.use-cases{
+  flex: 24.7rem;
+}
+.support{
+  flex: 14.8rem;
 }
