@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/main.min.css">
     <title>Northstar</title>
 </head>
 <body>
@@ -12,18 +12,32 @@
     <div class="container">
         <nav class="navbar">
             <div class="logo"><a href="#"><img src="img/logo.svg" alt="logo-northstar"></a></div>
-            <ul class="nav-list">
-                <li><a href="">Use cases</a></li>
-                <li><a href="">Financial tools</a></li>
-                <li><a href="">Total compensation tools</a></li>
-                <li><a href="">Advisors</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>
+                        <ul class="nav-list" data-da=".burger, 968, 0">
+                            <li><a href="#">Use cases</a></li>
+                            <li><a href="#">Financial tools</a></li>
+                            <li><a href="#">Total compensation tools</a></li>
+                            <li><a href="#">Advisors</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
             <div class="authorisation">
-                <a href="">Sign In</a>
-                <a href="">Sign Up</a>
+                <a href="#">Sign In</a>
+                <a href="#">Sign Up</a>
             </div>
-            <div class="burger"></div>
+
+            <div class="burger" >
+
+                <svg class="ham ham3" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active2')">
+                    <path
+                            class="line1 top2"
+                            d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568"/>
+                    <path
+                            class="line1 middle2"
+                            d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7"/>
+                    <path
+                            class="line1 bottom2"
+                            d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0"/>
+                </svg>
+            </div>
         </nav>
     </div>
 </header>
@@ -38,20 +52,20 @@
                 <p class="main-link">Interested in a personal membership?<a href="#">Click here</a></p>
             </div>
             <div class="main-image">
-                <img class="image" src="img/main-image.jpg" alt="">
-                <img class="decor1" src="img/Frame%20(10).svg" alt="">
-                <img class="decor2" src="img/Frame%20(11).svg" alt="">
-                <img class="decor3" src="img/Frame%20(12).svg" alt="">
-                <img class="decor4" src="img/Frame%20(13).svg" alt="">
+                <img class="image" src="img/main-image.jpg" alt="main-image">
+                <img class="decor1" src="img/Frame%20(10).svg" alt="decor1">
+                <img class="decor2" src="img/Frame%20(11).svg" alt="decor2">
+                <img class="decor3" src="img/Frame%20(12).svg" alt="decor3">
+                <img class="decor4" src="img/Frame%20(13).svg" alt="decor4">
             </div>
         </div>
         <div class="supports">
             <h2>Northstar supports employees around the world</h2>
             <div class="supports-logo">
-                <img src="img/zoom.png" alt="">
-                <img src="img/servicetitan.png" alt="">
-                <img src="img/invitae.png" alt="">
-                <img src="img/thumbtack.png" alt="">
+                <img src="img/zoom.png" alt="zoom">
+                <img src="img/servicetitan.png" alt="servicetitan">
+                <img src="img/invitae.png" alt="invitae">
+                <img src="img/thumbtack.png" alt="thumbtack">
             </div>
         </div>
     </div>
@@ -65,26 +79,26 @@
                 <h2 class="offers-title">Financial tools</h2>
                 <p class="offers-description">Employees can use self-service tools to track progress and take action on
                     their personal financial goals.</p>
-                <a class="offers-link" href="">Learn more</a>
+                <a class="offers-link" href="#">Learn more</a>
             </div>
             <div class="offers-card">
                 <h3 class="circle mod-2">2</h3>
                 <h2 class="offers-title">Total compensation tools</h2>
                 <p class="offers-description">Northstar surfaces how relevant benefits can be utilized to support
                     employees’ financial or life goals.</p>
-                <a class="offers-link" href="">Learn more</a>
+                <a class="offers-link" href="#">Learn more</a>
             </div>
             <div class="offers-card">
                 <h3 class="circle mod-3">3</h3>
                 <h2 class="offers-title">Full-time financial advisors</h2>
                 <p class="offers-description">Each employee is matched with a full-time Northstar Advisor based on their
                     goals and demographics.</p>
-                <a class="offers-link" href="">Learn more</a>
+                <a class="offers-link" href="#">Learn more</a>
             </div>
         </div>
         <div class="personal-finances__wrap">
             <div class="personal-finances__image">
-                <img src="img/finance.svg" alt="">
+                <img src="img/finance.svg" alt="finance">
             </div>
             <div class="personal-finances__text">
                 <h1 class="title">Make the connection between total compensation and personal finances</h1>
@@ -146,7 +160,7 @@
 
             <div class="partners-card">
                 <div class="icon">
-                    <img src="img/partners-1.svg" alt="">
+                    <img src="img/partners-1.svg" alt="partners">
                 </div>
                 <h2>Onboarding</h2>
                 <p>Support new hires with 401(k) rollover and enrollment, health plan selection, and relevant
@@ -154,7 +168,7 @@
             </div>
             <div class="partners-card">
                 <div class="icon">
-                    <img src="img/partners-2.svg" alt="">
+                    <img src="img/partners-2.svg" alt="partners-2">
                 </div>
                 <h2>Equity grants</h2>
                 <p>Explain how ISOs, NSOs, RSUs, and ESPPs work and support decision making around vesting, exercising,
@@ -162,7 +176,7 @@
             </div>
             <div class="partners-card">
                 <div class="icon">
-                    <img src="img/partners-3.svg" alt="">
+                    <img src="img/partners-3.svg" alt="partners-3">
                 </div>
                 <h2>Open enrollment</h2>
                 <p>Enable confident decision-making with health plan cost comparison, HSA vs FSA strategies, and
@@ -170,7 +184,7 @@
             </div>
             <div class="partners-card">
                 <div class="icon">
-                    <img src="img/partners-4.svg" alt="">
+                    <img src="img/partners-4.svg" alt="partners">
                 </div>
                 <h2>Team presentations</h2>
                 <p>Host sessions on relevant financial topics such as college savings, racial wealth gap, retirement
@@ -178,7 +192,7 @@
             </div>
             <div class="partners-card">
                 <div class="icon">
-                    <img src="img/partners-5.svg" alt="">
+                    <img src="img/partners-5.svg" alt="partners">
                 </div>
                 <h2>Offer letters</h2>
                 <p>Share the full value of total compensation including salary, equity, retirement, health plans, and
@@ -186,7 +200,7 @@
             </div>
             <div class="partners-card">
                 <div class="icon">
-                    <img src="img/partners-6.svg" alt="">
+                    <img src="img/partners-6.svg" alt="partners">
                 </div>
                 <h2>Offboarding</h2>
                 <p>Support employees leaving with changes in salary, navigating COBRA and new benefits, and
@@ -223,39 +237,39 @@
                 </div>
                 <ul class="live-stages-list">
                     <li>
-                        <div class="list-icon"><img src="img/list.svg" alt=""></div>
+                        <div class="list-icon"><img src="img/list.svg" alt="list"></div>
                         Living paycheck-to-paycheck
                     </li>
                     <li>
-                        <div class="list-icon"><img src="img/stairs.svg" alt=""></div>
+                        <div class="list-icon"><img src="img/stairs.svg" alt="stairs"></div>
                         Paying off student loans
                     </li>
                     <li>
-                        <div class="list-icon"><img src="img/heart.svg" alt=""></div>
+                        <div class="list-icon"><img src="img/heart.svg" alt="heart"></div>
                         Getting married or divorced
                     </li>
                     <li>
-                        <div class="list-icon"><img src="img/star.svg" alt=""></div>
+                        <div class="list-icon"><img src="img/star.svg" alt="star"></div>
                         Having a baby or adopting
                     </li>
                     <li>
-                        <div class="list-icon"><img src="img/give.svg" alt=""></div>
+                        <div class="list-icon"><img src="img/give.svg" alt="give"></div>
                         Buying or renovating a home
                     </li>
                     <li>
-                        <div class="list-icon"><img src="img/shield.svg" alt=""></div>
+                        <div class="list-icon"><img src="img/shield.svg" alt="shield"></div>
                         Paying for medical emergencies
                     </li>
                     <li>
-                        <div class="list-icon"><img src="img/pink-list.svg" alt=""></div>
+                        <div class="list-icon"><img src="img/pink-list.svg" alt="pink-list"></div>
                         Understanding taxes
                     </li>
                     <li>
-                        <div class="list-icon"><img src="img/pacman.svg" alt=""></div>
+                        <div class="list-icon"><img src="img/pacman.svg" alt="pacman"></div>
                         Supporting aging parents
                     </li>
                     <li>
-                        <div class="list-icon"><img src="img/ambrella.svg" alt=""></div>
+                        <div class="list-icon"><img src="img/ambrella.svg" alt="ambrella"></div>
                         Planning for retirement
                     </li>
                 </ul>
@@ -269,24 +283,24 @@
         <div class="employers-card-wrap">
             <div class="employers-card">
                 <div class="employers-card-image">
-                    <img src="img/employer-img-1.jpg" alt="">
+                    <img src="img/employer-img-1.jpg" alt="employer-img-1">
                 </div>
                 <div class="employers-card-text">
                     <h2>Help reach your company goals</h2>
                     <p>Northstar's actionable total compensation advice helps drive benefits adoption, support DEI,
                         attract talent, and more.</p>
-                    <a href="">Learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
             <div class="employers-card">
                 <div class="employers-card-image">
-                    <img src="img/employer-img-2.jpg" alt="">
+                    <img src="img/employer-img-2.jpg" alt="employer-img-2">
                 </div>
                 <div class="employers-card-text">
                     <h2>Provide personalized support</h2>
                     <p>Northstar's 1-on-1 financial guidance helps enhance your employee experience and improves
                         satisfaction.</p>
-                    <a href="">Learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
@@ -305,24 +319,48 @@
         <div class="footer-wrapper">
 
             <div class="footer-logo">
-                <a href=""><svg width="125" height="20" viewBox="0 0 125 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.9417 11.6212C13.0145 11.6212 13.6128 10.9173 13.6128 9.38461V0.109615H16.3052V19.5885H13.5118C13.5118 19.5885 8.50036 12.5 6.57963 9.91154C5.75646 8.78077 5.30867 8.07692 4.38451 8.07692C3.31172 8.07692 2.7134 8.78077 2.7134 10.3135V19.5885H0.0209351V0.109615H2.81439C2.81439 0.109615 7.82582 7.19808 9.74655 9.78654C10.5697 10.9173 11.0175 11.6212 11.9417 11.6212Z" fill="white"/>
-<path d="M32.2637 12.3404C32.2637 16.4673 29.8457 19.8904 25.5564 19.8904C21.2176 19.8904 18.7995 16.4673 18.7995 12.3404C18.7995 8.28846 21.2176 4.81538 25.5564 4.81538C29.8437 4.81538 32.2637 8.28846 32.2637 12.3404ZM29.5941 12.3404C29.5941 10.05 27.9973 8.71731 25.5545 8.71731C23.0602 8.71731 21.4653 10.0519 21.4653 12.3404C21.4653 14.7308 23.0621 15.9904 25.5545 15.9904C27.9992 15.9904 29.5941 14.7308 29.5941 12.3404Z" fill="white"/>
-<path d="M45.6021 14.8654V8.89231H43.3079C40.564 8.89231 38.8948 9.16923 37.9459 10.8058C37.4962 11.5865 37.3971 12.5423 37.3971 13.9769V19.5885H34.7047V5.11731H37.3971V8.79231C38.146 6.275 39.7656 5.11731 42.6582 5.11731H45.6002V1.41731H48.2927V5.11731H53.7233V8.89231H48.2927V13.7635" fill="white"/>
-<path d="M57.1513 19.5885V0.109615H59.8437V8.84231C60.4421 6.52692 62.1627 4.86538 64.8552 4.86538C67.9726 4.86538 70.0915 7.30577 70.0915 10.7788V19.5865H67.399V12.5904C67.399 11.6846 67.2999 10.9538 66.8007 10.25C66.1528 9.34423 65.1791 8.89038 63.7843 8.89038C62.2389 8.89038 60.7679 9.44423 60.0934 11.3058C59.8437 12.0096 59.8437 13.1423 59.8437 14.35V19.5846H57.1513V19.5885Z" fill="white"/>
-<path d="M88.7024 14.8654V8.89231H86.4081V5.11731H88.7024V1.41731H91.3948V5.11731H96.8255V8.89231H91.3948V13.7635" fill="white"/>
-<path d="M109.718 19.5885V16.8712C108.895 18.7077 107.424 19.8904 105.28 19.8904C101.416 19.8904 99.3445 16.5942 99.3445 12.3654C99.3445 8.21346 101.414 4.81538 105.28 4.81538C107.424 4.81538 108.897 6.02308 109.718 7.85961V5.11731H112.41V19.5885H109.718ZM109.718 12.3404C109.718 10.05 108.173 8.71731 105.878 8.71731C103.535 8.71731 102.014 10.0519 102.014 12.3404C102.014 14.7308 103.535 15.9904 105.878 15.9904C108.173 15.9904 109.718 14.7308 109.718 12.3404Z" fill="white"/>
-<path d="M115.877 19.5885V5.11731H118.569V8.79231C119.318 6.275 120.937 5.11731 123.83 5.11731H124.977V8.89231H124.478C121.736 8.89231 120.065 9.16923 119.116 10.8058C118.666 11.5865 118.567 12.5423 118.567 13.9769V19.5885H115.877Z" fill="white"/>
-<path d="M91.3948 13.7635C91.3948 14.9885 91.8483 15.9981 93.5842 15.9981C95.141 15.9981 95.8232 15.2058 95.8232 13.75H97.6925C97.9516 17.7269 96.5816 19.8904 93.346 19.8904C90.1258 19.8904 88.7005 17.4577 88.7005 14.8654" fill="white"/>
-<path d="M48.2965 13.7635C48.2965 14.9885 48.75 15.9981 50.4859 15.9981C52.0427 15.9981 52.7249 15.2058 52.7249 13.75H54.5941C54.8533 17.7269 53.4832 19.8904 50.2477 19.8904C47.0274 19.8904 45.6021 17.4577 45.6021 14.8654" fill="white"/>
-<path d="M85.3125 15.4115C85.3125 17.3615 83.9101 19.8904 79.2778 19.8904C74.2397 19.8904 72.3609 16.9712 72.4848 13.75H74.354C74.354 14.5558 74.838 15.1346 75.4116 15.4865C76.4463 16.1 78.0888 16.1904 79.4608 16.1904C81.1547 16.1904 82.6258 15.7442 82.6258 14.8231C82.6258 14.3154 82.3228 13.9 81.3662 13.725C80.7355 13.6096 79.859 13.4673 78.5842 13.3096C75.726 12.9538 72.8125 12.4404 72.8125 9.34615C72.8125 6.63461 75.1143 4.81538 78.4204 4.81538C82.864 4.81538 84.9314 7.71154 84.6437 10.7212H82.8239C82.8239 10.0865 82.3209 9.40769 81.6978 9.08077C80.9756 8.70385 80.0553 8.46538 78.5842 8.46538C76.6483 8.46538 75.3582 8.88269 75.3582 9.81923C75.3582 10.55 75.9451 10.925 78.9558 11.2712C80.888 11.4885 82.2237 11.6673 83.1383 12.0788C84.7123 12.725 85.3125 14.0769 85.3125 15.4115Z" fill="white"/>
-</svg></a>
+                <a href="#">
+                    <svg width="125" height="20" viewBox="0 0 125 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9417 11.6212C13.0145 11.6212 13.6128 10.9173 13.6128 9.38461V0.109615H16.3052V19.5885H13.5118C13.5118 19.5885 8.50036 12.5 6.57963 9.91154C5.75646 8.78077 5.30867 8.07692 4.38451 8.07692C3.31172 8.07692 2.7134 8.78077 2.7134 10.3135V19.5885H0.0209351V0.109615H2.81439C2.81439 0.109615 7.82582 7.19808 9.74655 9.78654C10.5697 10.9173 11.0175 11.6212 11.9417 11.6212Z"
+                              fill="white"/>
+                        <path d="M32.2637 12.3404C32.2637 16.4673 29.8457 19.8904 25.5564 19.8904C21.2176 19.8904 18.7995 16.4673 18.7995 12.3404C18.7995 8.28846 21.2176 4.81538 25.5564 4.81538C29.8437 4.81538 32.2637 8.28846 32.2637 12.3404ZM29.5941 12.3404C29.5941 10.05 27.9973 8.71731 25.5545 8.71731C23.0602 8.71731 21.4653 10.0519 21.4653 12.3404C21.4653 14.7308 23.0621 15.9904 25.5545 15.9904C27.9992 15.9904 29.5941 14.7308 29.5941 12.3404Z"
+                              fill="white"/>
+                        <path d="M45.6021 14.8654V8.89231H43.3079C40.564 8.89231 38.8948 9.16923 37.9459 10.8058C37.4962 11.5865 37.3971 12.5423 37.3971 13.9769V19.5885H34.7047V5.11731H37.3971V8.79231C38.146 6.275 39.7656 5.11731 42.6582 5.11731H45.6002V1.41731H48.2927V5.11731H53.7233V8.89231H48.2927V13.7635"
+                              fill="white"/>
+                        <path d="M57.1513 19.5885V0.109615H59.8437V8.84231C60.4421 6.52692 62.1627 4.86538 64.8552 4.86538C67.9726 4.86538 70.0915 7.30577 70.0915 10.7788V19.5865H67.399V12.5904C67.399 11.6846 67.2999 10.9538 66.8007 10.25C66.1528 9.34423 65.1791 8.89038 63.7843 8.89038C62.2389 8.89038 60.7679 9.44423 60.0934 11.3058C59.8437 12.0096 59.8437 13.1423 59.8437 14.35V19.5846H57.1513V19.5885Z"
+                              fill="white"/>
+                        <path d="M88.7024 14.8654V8.89231H86.4081V5.11731H88.7024V1.41731H91.3948V5.11731H96.8255V8.89231H91.3948V13.7635"
+                              fill="white"/>
+                        <path d="M109.718 19.5885V16.8712C108.895 18.7077 107.424 19.8904 105.28 19.8904C101.416 19.8904 99.3445 16.5942 99.3445 12.3654C99.3445 8.21346 101.414 4.81538 105.28 4.81538C107.424 4.81538 108.897 6.02308 109.718 7.85961V5.11731H112.41V19.5885H109.718ZM109.718 12.3404C109.718 10.05 108.173 8.71731 105.878 8.71731C103.535 8.71731 102.014 10.0519 102.014 12.3404C102.014 14.7308 103.535 15.9904 105.878 15.9904C108.173 15.9904 109.718 14.7308 109.718 12.3404Z"
+                              fill="white"/>
+                        <path d="M115.877 19.5885V5.11731H118.569V8.79231C119.318 6.275 120.937 5.11731 123.83 5.11731H124.977V8.89231H124.478C121.736 8.89231 120.065 9.16923 119.116 10.8058C118.666 11.5865 118.567 12.5423 118.567 13.9769V19.5885H115.877Z"
+                              fill="white"/>
+                        <path d="M91.3948 13.7635C91.3948 14.9885 91.8483 15.9981 93.5842 15.9981C95.141 15.9981 95.8232 15.2058 95.8232 13.75H97.6925C97.9516 17.7269 96.5816 19.8904 93.346 19.8904C90.1258 19.8904 88.7005 17.4577 88.7005 14.8654"
+                              fill="white"/>
+                        <path d="M48.2965 13.7635C48.2965 14.9885 48.75 15.9981 50.4859 15.9981C52.0427 15.9981 52.7249 15.2058 52.7249 13.75H54.5941C54.8533 17.7269 53.4832 19.8904 50.2477 19.8904C47.0274 19.8904 45.6021 17.4577 45.6021 14.8654"
+                              fill="white"/>
+                        <path d="M85.3125 15.4115C85.3125 17.3615 83.9101 19.8904 79.2778 19.8904C74.2397 19.8904 72.3609 16.9712 72.4848 13.75H74.354C74.354 14.5558 74.838 15.1346 75.4116 15.4865C76.4463 16.1 78.0888 16.1904 79.4608 16.1904C81.1547 16.1904 82.6258 15.7442 82.6258 14.8231C82.6258 14.3154 82.3228 13.9 81.3662 13.725C80.7355 13.6096 79.859 13.4673 78.5842 13.3096C75.726 12.9538 72.8125 12.4404 72.8125 9.34615C72.8125 6.63461 75.1143 4.81538 78.4204 4.81538C82.864 4.81538 84.9314 7.71154 84.6437 10.7212H82.8239C82.8239 10.0865 82.3209 9.40769 81.6978 9.08077C80.9756 8.70385 80.0553 8.46538 78.5842 8.46538C76.6483 8.46538 75.3582 8.88269 75.3582 9.81923C75.3582 10.55 75.9451 10.925 78.9558 11.2712C80.888 11.4885 82.2237 11.6673 83.1383 12.0788C84.7123 12.725 85.3125 14.0769 85.3125 15.4115Z"
+                              fill="white"/>
+                    </svg>
+                </a>
                 <p>© Watt, Inc. 2016-2021. All rights reserved.</p>
                 <p>Terms of Service | Privacy Policy</p>
                 <div class="social">
-                    <div class="icons"><a href=""><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a></div>
-                    <div class="icons"><a href=""><svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a></div>
-                    <div class="icons"><a href=""><svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a></div>
+                    <div class="icons"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                        </svg>
+                    </a></div>
+                    <div class="icons"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a></div>
+                    <div class="icons"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a></div>
                 </div>
             </div>
             <div class="company2">
@@ -366,7 +404,7 @@
             </div>
         </div>
         <div class="cat-in-footer">
-            <img src="img/kotik.png" alt="">
+            <img src="img/kotik.png" alt="kotik">
         </div>
     </div>
 </footer>
