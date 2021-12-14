@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  transition: 300ms;
 }
 *::selection {
   background: #58D1BD;
@@ -19,7 +18,6 @@ html {
   @media(max-width: 850px) {
     font-size: 7px;
   }
-  overflow-x: hidden;
 }
 body {
   font-family: Roboto, sans-serif;
